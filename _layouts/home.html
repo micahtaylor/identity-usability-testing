@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="container sm-pt4">
-  <div class="px2 py3 sm-py5 sm-px6 mx-auto sm-mb5 border-box card">
+<div class="container">
+  <div class="px1 py3 mx-auto sm-mb5 border-box card">
     {{ content }}
-    <h1 class="h3 my0">
-      Log in
+    <h1 class="h4 my0">
+      CBP Trusted Traveler Programs using <a href="login.gov">login.gov</a> to make signing in easy and secure.
     </h1>
-    <form autocomplete="off" role="form" class="simple_form mt3 sm-mt4 new_user" id="new_user" action="{{ "/users/two_factor_authentication/" | prepend: site.baseurl }}" accept-charset="UTF-8">
+    <form autocomplete="off" role="form" class="simple_form mt2 new_user" id="new_user" action="{{ "/users/two_factor_authentication/" | prepend: site.baseurl }}" accept-charset="UTF-8">
       <div class="mb3 email required user_email">
         <label class="email required bold" for="user_email"><abbr title="required" class="red display-none">*</abbr> Email</label><input class="string email required block col-12 field ignore" required="required" aria-required="true" type="email" value="" name="user[email]" id="user_email">
       </div>
