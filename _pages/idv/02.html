@@ -13,7 +13,7 @@ progress: 4
     <h2 class="h3 my0 pb0">
       First, tell us about yourself
     </h2>
-    <form autocomplete="off" role="form" class="simple_form mt2 new_profile" id="new_profile" action="{{ "/idv/finance/" | prepend: site.baseurl }}" accept-charset="UTF-8">
+    <form autocomplete="off" role="form" class="simple_form mt2 new_profile" id="new_profile" action="{{ "/success_idv/" | prepend: site.baseurl }}" accept-charset="UTF-8">
       <div class="mb5">
         <div class="mb3 pb-tiny border-bottom border-teal">
           Full name
@@ -245,13 +245,10 @@ progress: 4
     </div>
     <div class="mb4">
       <div class="mt0 mb3 pb-tiny border-bottom border-teal">
-        Social Security Number<span class="hint--top hint--no-animate" aria-label="This is a placeholder tooltip." tabindex="0"><img width="16" class="px1 img-tooltip" src="{{ "/images/tooltip.svg" | prepend: site.baseurl }}" alt="Tooltip"></span>
+        Social Security Number<span class="hint--top hint--no-animate" aria-label="We are asking for your Social Security Number to help us validate that you are who you say you are." tabindex="0"><img width="16" class="px1 img-tooltip" src="{{ "/images/tooltip.svg" | prepend: site.baseurl }}" alt="Tooltip"></span>
       </div>
       <div class="mb3 string required profile_ssn">
         <label class="string required bold" for="profile_ssn"><abbr title="required" class="red display-none">*</abbr> Social Security Number</label><input class="string required ssn block col-12 field" aria-labelledby="label-ssn" required="required" aria-required="true" pattern="^\d{3}-?\d{2}-?\d{4}$" type="text" name="profile[ssn]" id="profile_ssn">
-        <div>
-          <span class="mt1 h5 blue sans-serif underline hint--top" tabindex="0" aria-label="This is a placeholder tooltip.">Individual Tax Identification Number</span>
-        </div>
       </div>
     </div>
     <div class="mt5">
